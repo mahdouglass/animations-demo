@@ -1,3 +1,19 @@
 button {
     margin-bottom: 10px;
 }
+
+.size-original {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.size-increase {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    -webkit-transition: 2s;
+    transition: 2s;
+}

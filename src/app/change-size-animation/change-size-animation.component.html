@@ -1,3 +1,13 @@
-<h3>Change the div size</h3>
-<button (click)="changeState()">Change Size</button>
-<div [@changeDivSize]=currentState></div>
+<h2>Change div size with click</h2>
+<div class="row">
+  <div class="col-md-6">
+    <h4>Angular Animation</h4>
+    <button (click)="changeState()">Change Size</button>
+    <div [@changeDivSize]=currentState></div>
+  </div>
+  <div class="col-md-6">
+    <h4>CSS Animation</h4>
+    <button (click)="changeSize()">Change Size</button>
+    <div [ngClass]="divClicked ? 'size-increase': 'size-original'"></div>
+  </div>
+</div>

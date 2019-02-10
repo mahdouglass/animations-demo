@@ -24,7 +24,13 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class ChangeSizeAnimationComponent {
   currentState = 'initial';
+  divClicked = false;
+
   changeState() {
     this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+  }
+
+  changeSize() {
+    this.divClicked = !this.divClicked;
   }
 }
