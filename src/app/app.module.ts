@@ -4,11 +4,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ChangeSizeAnimationComponent } from './change-size-animation/change-size-animation.component';
+import { HoverAnimationDemoComponent } from './hover-animation-demo/hover-animation-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChangeSizeAnimationComponent
+    ChangeSizeAnimationComponent,
+    HoverAnimationDemoComponent
   ],
   imports: [
     BrowserModule,
