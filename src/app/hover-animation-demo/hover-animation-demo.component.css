@@ -1,0 +1,9 @@
+#css-color-change {
+    background-color: green;
+    transition: 1000ms;
+}
+
+#css-color-change:hover {
+    background-color: red;
+    transition: 1500ms;
+}
