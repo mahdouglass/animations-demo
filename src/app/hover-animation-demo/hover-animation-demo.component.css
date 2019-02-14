@@ -1,3 +1,10 @@
+button {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
 #css-color-change {
     background-color: green;
     transition: 1000ms;
