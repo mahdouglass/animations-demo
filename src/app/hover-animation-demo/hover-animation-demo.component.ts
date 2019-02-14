@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
-
 @Component({
   selector: 'app-hover-animation-demo',
   templateUrl: './hover-animation-demo.component.html',
   styleUrls: ['./hover-animation-demo.component.css'],
   animations: [
-    trigger('hoverColor', [
+    trigger('hoverChangeColor', [
       state('initial', style ({
         backgroundColor: 'red',
       })),
@@ -20,5 +19,14 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class HoverAnimationDemoComponent {
-  
+  initial = false;
+
+  get stateName() {
+    return this.initial ? 'initial' : 'final'
+  }
+
+  hoverChange() {
+    this.initial = !this.initial;
+  }
+
 }
