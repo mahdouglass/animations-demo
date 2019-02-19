@@ -4,3 +4,32 @@
     background-color: red;
     color: white;
 }
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+    20% {
+        background-color: orange;
+    }
+    40% {
+        background-color: yellow;
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: purple;
+    }
+}
+
+#css-color-change {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    animation-name: rainbow;
+    animation-duration: 10s;
+}
