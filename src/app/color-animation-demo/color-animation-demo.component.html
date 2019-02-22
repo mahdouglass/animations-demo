@@ -3,6 +3,8 @@
   <div class="col-md-6">
     <h4>Angular</h4>
     <div @rainbowColorChange></div>
+    <button (click)="changeState()">Change Size</button>
+    <div [@rainbowColorChange]=currentState></div>
   </div>
   <div class="col-md-6">
     <h4>CSS</h4>
